@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <div className="Header">
-        <h1>Welcome to Icar Rental</h1>
+        <h1>Welcome to Go Drive Official Website</h1>
         <p>The number one car rental platform in Malaysia</p>
       </div>
       <div className="content">
