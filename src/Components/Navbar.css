@@ -5,6 +5,7 @@
     padding: 1rem 2rem;
     background-color: #004d66;
     color: rgb(255, 255, 255);
+    
   }
   
   .navbar ul {
@@ -13,10 +14,16 @@
     display: flex;
     gap: 1rem;
     
+    
   }
   
   .navbar li {
     cursor: pointer;
     color: white;
   }
+  .navbar a {
+    color: white;
+  }
+
+ 
 
