@@ -1,26 +1,68 @@
-.Header{
-    text-align: center;
-    margin-bottom: 50px; 
-    margin-top: 30px;
+.Header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.Header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.Header p {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .content {
-    text-align: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: #444;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Forces all cards to stretch to the same height */
+  gap: 20px;
 }
 
 .card {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
 
-  .card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin: 10px 0;
+}
