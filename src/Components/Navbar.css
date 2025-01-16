@@ -4,15 +4,19 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #004d66;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   
   .navbar ul {
+    text-decoration: none;
     list-style: none;
     display: flex;
     gap: 1rem;
+    
   }
   
   .navbar li {
     cursor: pointer;
+    color: white;
   }
+

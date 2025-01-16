@@ -3,6 +3,7 @@
   padding: 20px;
   background-color: #004d66;
   margin: 0;
+  margin-bottom: 0;
 }
 
 .Header h1 {
@@ -19,6 +20,7 @@
 
 .content {
   margin: 0;
+  margin-top: 0;
   background-color: #004d66;
   text-align: center;
   margin-top: 30px;
@@ -52,13 +54,19 @@
   width: 300px; /* Fixed width */
   height: 350px; /* Fixed height */
   padding: 20px;
-  background-color: #fff;
+  background-color: #9aa7f2;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f0f8ff;
+}
 .card img {
   width: 100px;
   height: 100px;

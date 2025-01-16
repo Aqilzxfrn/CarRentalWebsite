@@ -14,9 +14,7 @@ const Home = () => {
       <div className="content">
         <h1>Why Us?</h1>
         <div className="cards-container">
-            
-            
-          {/* Card 1 */}
+            {/* Card 1 */}
           <div className="card">
             <img src={homeprice} alt="Affordable Price" />
             <h2>Affordable Price</h2>

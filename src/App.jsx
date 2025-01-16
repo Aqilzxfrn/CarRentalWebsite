@@ -1,13 +1,19 @@
-import Navbar from './Components/Navbar'; 
-import Home from "./Components/Home";
-import "./App.css"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home"; // Import Home page
+import Contact from "./Components/Contact"; // Import Contact page
+import Navbar from "./Components/Navbar";
+
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Home/>
-    </div>
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Contact" element={<Contact />} />
+    </Routes>
+  </Router>
   );
-}
+};
 
 export default App;
