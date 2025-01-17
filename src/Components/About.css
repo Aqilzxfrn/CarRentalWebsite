@@ -1,0 +1,158 @@
+/* General Page Styles */
+
+  
+  header {
+    background-color: #003366; /* Deep blue header */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #ffcc00; /* Yellow hover effect */
+  }
+  
+  /* About Section */
+  .about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+  }
+  
+  .about-header {
+    background-color: #0056b3; /* Blue hero background */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .about-content {
+    padding: 20px;
+  }
+  
+  .about-content p {
+    margin: 1em 0;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-content h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #0056b3;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .about-content h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #0056b3;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .about-content ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  
+  .about-content ul li {
+    font-size: 1rem;
+    color: #444;
+    margin: 8px 0;
+  }
+  
+  .about-content ul li:hover {
+    color: #0056b3;
+  }
+  
+  /* Call to Action Button */
+  .button {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 15px;
+    }
+  
+    .about-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    header nav a {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

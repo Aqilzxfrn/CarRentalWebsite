@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contact-info">
           <h2>Our Office</h2>
           <p><strong>Address:</strong> 123 Main Street, Kuala Lumpur, Malaysia</p>
-          <p><strong>Email:</strong> support@icarrental.com</p>
+          <p><strong>Email:</strong> GoDrive@gmail.com</p>
           <p><strong>Phone:</strong> +60 123-456-789</p>
         </div>
 
