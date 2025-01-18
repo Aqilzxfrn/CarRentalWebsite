@@ -13,7 +13,7 @@ const About = () => {
           Welcome to <strong>Go Drive</strong>, your trusted partner in providing reliable and affordable car rental services. With a fleet of well-maintained vehicles and a commitment to customer satisfaction, we make it easy for you to get where you need to go.
         </p>
         <p>
-          Our journey began with a simple idea: to make car rentals hassle-free, accessible, and enjoyable. Today, we take pride in serving travelers, commuters, and adventurers with options tailored to their unique needs. Whether you need a compact car for city trips, a luxury sedan for business travel, or an SUV for family road trips, we have the perfect ride for you.
+          Our journey began with a simple idea: to make car rentals hassle-free, accessible, and enjoyable. Today, we take pride in serving travelers, commuters, and adventurers with options tailored to their unique needs. Whether you need a compact car for city trips, a comfortable sedan for business travel, or an SUV for family road trips, we have the perfect ride for you.
         </p>
         <h2>Our Mission</h2>
         <p>
@@ -30,7 +30,7 @@ const About = () => {
           Choosing <strong>Go Drive</strong> means choosing:
         </p>
         <ul>
-          <li>Flexibility: Rent by the hour, day, or week, based on your schedule.</li>
+          <li>Flexibility: Rent by day or week, based on your schedule.</li>
           <li>Affordability: Competitive rates to fit your budget.</li>
           <li>Convenience: Pick up and drop off your rental at locations that work for you.</li>
           <li>Quality: A fleet of vehicles that are regularly inspected and maintained.</li>
