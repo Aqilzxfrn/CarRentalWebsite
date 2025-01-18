@@ -25,5 +25,6 @@
     color: white;
   }
 
- 
-
+ .navbar h1 {
+  color: white;
+ }

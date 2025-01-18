@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'; // Add custom styles if needed
+import './About.css'; 
 
 const About = () => {
   return (
@@ -9,14 +9,14 @@ const About = () => {
       </header>
       <section className="about-content">
         <p>
-          Welcome to <strong>YourCarRental</strong>, your trusted partner in providing reliable and affordable car rental services. With a fleet of well-maintained vehicles and a commitment to customer satisfaction, we make it easy for you to get where you need to go.
+          Welcome to <strong>Go Drive</strong>, your trusted partner in providing reliable and affordable car rental services. With a fleet of well-maintained vehicles and a commitment to customer satisfaction, we make it easy for you to get where you need to go.
         </p>
         <p>
           Our journey began with a simple idea: to make car rentals hassle-free, accessible, and enjoyable. Today, we take pride in serving travelers, commuters, and adventurers with options tailored to their unique needs. Whether you need a compact car for city trips, a luxury sedan for business travel, or an SUV for family road trips, we have the perfect ride for you.
         </p>
         <h2>Our Mission</h2>
         <p>
-          At <strong>YourCarRental</strong>, our mission is to deliver exceptional value and convenience to our customers. We aim to:
+          At <strong>Go Drive</strong>, our mission is to deliver exceptional value and convenience to our customers. We aim to:
         </p>
         <ul>
           <li>Provide a wide range of high-quality vehicles to suit every preference.</li>
@@ -26,7 +26,7 @@ const About = () => {
         </ul>
         <h2>Why Choose Us?</h2>
         <p>
-          Choosing <strong>YourCarRental</strong> means choosing:
+          Choosing <strong>Go Drive</strong> means choosing:
         </p>
         <ul>
           <li>Flexibility: Rent by the hour, day, or week, based on your schedule.</li>
@@ -35,7 +35,7 @@ const About = () => {
           <li>Quality: A fleet of vehicles that are regularly inspected and maintained.</li>
         </ul>
         <p>
-          Thank you for choosing <strong>YourCarRental</strong>. We look forward to being part of your journey.
+          Thank you for choosing <strong>Go Drive</strong>. We look forward to being part of your journey.
         </p>
       </section>
     </div>
