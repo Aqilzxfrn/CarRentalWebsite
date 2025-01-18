@@ -3,7 +3,8 @@ import './About.css';
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className='AboutPage'>
+     <div className="about-container">
       <header className="about-header">
         <h1>About Us</h1>
       </header>
@@ -38,6 +39,7 @@ const About = () => {
           Thank you for choosing <strong>Go Drive</strong>. We look forward to being part of your journey.
         </p>
       </section>
+     </div>
     </div>
   );
 };

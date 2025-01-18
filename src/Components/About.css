@@ -55,6 +55,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    color: white;
   }
   
   .about-content {
@@ -155,4 +156,6 @@
       padding: 10px 20px;
     }
   }
-  
+ .AboutPage {
+  background-color: azure;
+ }
