@@ -32,8 +32,8 @@
   
   /* About Section */
   .about-container {
-    max-width: 1000px;
-    margin: 50px auto;
+   
+    margin: 0;
     padding: 20px 30px;
     background-color: #ffffff;
     border-radius: 12px;
@@ -156,6 +156,3 @@
       padding: 10px 20px;
     }
   }
- .AboutPage {
-  background-color: azure;
- }
