@@ -1,49 +1,71 @@
 .Header {
   text-align: center;
-  padding: 20px;
+  padding: 50px 20px; /* Increased padding for better spacing */
   background-color: #004d66;
-  margin: 0;
-  margin-bottom: 0;
-}
-
-.Header h1 {
-  font-size: 2.5rem;
   color: #fdf9f9;
   margin: 0;
 }
 
-.Header p {
-  font-size: 1.2rem;
-  color: #faf7f7;
-  margin: 0;
+.Header h1 {
+  font-size: 3rem; /* Larger font for better impact */
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+.Header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.Header .cta-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Header .cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Content Section */
 .content {
-  margin: 0;
-  margin-top: 0;
-  background-color: #004d66;
-  text-align: center;
-  margin-top: 30px;
-  background-image: url("../assets/images/background.jpeg"); /* Path to your image */
-  background-size: cover; /* Makes the image cover the entire container */
+  margin: 0; /* Removes any default margins */
+  padding: 20px; /* Adds some padding around the content */
+  background-color: #004d66; /* Background color for the section */
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"); /* Background image */
+  background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  border-radius: 10px; /* Optional: Adds rounded corners */
+  border-radius: 0; /* Removes rounded corners for a full-width look */
+  width: 100%; /* Makes the section take up the full width of the viewport */
+  text-align: center; /* Centers the text */
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 .content h1 {
   margin: 0;
-  font-size: 7rem;
+  font-size: 2.5rem;
   color: #f5f3f3;
+  margin-bottom: 30px;
 }
 
+/* Cards Section */
 .cards-container {
   display: flex;
-  justify-content: center;
-  align-items: stretch; /* Forces all cards to stretch to the same height */
-  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: stretch; /* Ensures all cards have the same height */
+  gap: 20px; /* Adds spacing between the cards */
+  flex-wrap: wrap; /* Ensures cards wrap to the next line on smaller screens */
   padding: 20px;
-  
+  max-width: 1200px; /* Limits the container width for better readability */
+  margin: 0 auto; /* Centers the container within the section */
 }
 
 .card {
@@ -51,22 +73,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 300px; /* Fixed width */
-  height: 350px; /* Fixed height */
+  width: 280px; /* Slightly smaller for better responsiveness */
+  min-height: 350px; /* Ensures consistent height */
   padding: 20px;
   background-color: #9aa7f2;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   background-color: #f0f8ff;
 }
+
 .card img {
   width: 100px;
   height: 100px;
@@ -75,16 +96,62 @@
 }
 
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Slightly larger for readability */
   color: #222;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .card p {
-  
- font-size: 1rem;
+  font-size: 1rem;
   color: #555;
   text-align: center;
   margin: 10px 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Header h1 {
+    font-size: 2rem;
+  }
+
+  .Header p {
+    font-size: 1.2rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 90%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Header h1 {
+    font-size: 1.8rem;
+  }
+
+  .Header p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%; /* Take full width on small screens */
+    min-height: auto; /* Allow flexible height */
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+

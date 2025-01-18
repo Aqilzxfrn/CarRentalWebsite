@@ -5,6 +5,7 @@ import Contact from "./Components/Contact"; // Import Contact page
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Car from "./Components/Car";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/About" element={<About />} />
       <Route path="/Car" element={<Car />} />
     </Routes>
+    <Footer/>
   </Router>
   );
 };
