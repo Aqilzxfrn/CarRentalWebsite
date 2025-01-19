@@ -5,10 +5,17 @@ import "./Payment.css";
 const Payment = ({ setCart }) => {
   const { id } = useParams(); // Get car ID from the URL
   const [paymentCompleted, setPaymentCompleted] = useState(false); // Track payment status
+  const [rentalDates, setRentalDates] = useState({ start: "", end: "" });
+  
   const navigate = useNavigate();
 
   const handlePayment = (e) => {
     e.preventDefault(); // Prevent default form submission
+    if (!rentalDates.start || !rentalDates.end) {
+      alert("Please select rental start and end dates.");
+      return;
+    }
+
 
     // Simulate payment completion
     setPaymentCompleted(true);
@@ -28,6 +35,9 @@ const Payment = ({ setCart }) => {
       <div className="payment-container">
         <h1>Payment Completed!</h1>
         <p>The car with ID: {id} has been added to your cart.</p>
+        <p>
+          Rental Period: {rentalDates.start} to {rentalDates.end}
+        </p>
         <p>Redirecting to the homepage...</p>
       </div>
     );
@@ -59,6 +69,28 @@ const Payment = ({ setCart }) => {
         <div>
           <label>CVV</label>
           <input type="password" placeholder="123" maxLength="3" required />
+        </div>
+        <div>
+          <label>Rental Start Date</label>
+          <input
+            type="date"
+            value={rentalDates.start}
+            onChange={(e) =>
+              setRentalDates((prev) => ({ ...prev, start: e.target.value }))
+            }
+            required
+          />
+        </div>
+        <div>
+          <label>Rental End Date</label>
+          <input
+            type="date"
+            value={rentalDates.end}
+            onChange={(e) =>
+              setRentalDates((prev) => ({ ...prev, end: e.target.value }))
+            }
+            required
+          />
         </div>
         <button type="submit">Pay Now</button>
       </form>
