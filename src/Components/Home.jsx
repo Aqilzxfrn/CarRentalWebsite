@@ -34,7 +34,7 @@ const Home = () => {
 
         {/* Content */}
         <div style={{ position: "relative", zIndex: 1 }}>
-          <h1>Welcome to Go Drive Official Website</h1>
+          <h1 style={{color:"white"}}>Welcome to Go Drive Official Website</h1>
           <p>The number one car rental platform in Malaysia</p>
         </div>
       </div>
