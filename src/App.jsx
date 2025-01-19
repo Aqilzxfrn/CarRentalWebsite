@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Car from "./Components/Car";
 import Footer from "./Components/Footer";
+import Payment from "./Components/Payment";
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
       <Route path="/Contact" element={<Contact />} />
       <Route path="/About" element={<About />} />
       <Route path="/Car" element={<Car />} />
+      <Route path="/payment/:id" element={<Payment />} />
     </Routes>
-    <Footer/>
+    
   </Router>
   );
 };

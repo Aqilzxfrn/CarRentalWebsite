@@ -1,6 +1,9 @@
 // Import necessary modules
 import React, { useState, useEffect } from 'react';
 import './Car.css'; // Add a custom CSS file for styling
+import { useNavigate } from 'react-router-dom';
+import Payment from './Payment';
+
 
 // Example Car Data
 const carData = [
@@ -69,6 +72,7 @@ const carData = [
 const Car = () => {
   const [cars, setCars] = useState([]);
   const [filter, setFilter] = useState('ALL');
+  const navigate = useNavigate(); 
 
   
   useEffect(() => {
@@ -84,7 +88,7 @@ const Car = () => {
   );
 
   const handleBookNow = (carId) => {
-    alert(`Car with ID ${carId} has been booked!`);
+    navigate(`/payment/${carId}`);
   };
 
   return (
